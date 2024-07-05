@@ -41,6 +41,21 @@ export default {
 </script>
 
 <template>
-    <p>距離黑神話悟空開啓：</p>
-    <p>{{ remainTimeStr }}</p>
+    <div class="countdownpanel">
+        <p class="countdowntext">距離黑神話悟空開啓：</p>
+        <p class="countdowntext">{{ remainTimeStr }}</p>
+    </div>
 </template>
+
+<style>
+    .countdownpanel {
+        top: 20%;
+        left: 60%;
+        z-index: 2;
+        position:absolute;
+    }
+    .countdowntext {
+        font-size: 48px;
+        color:rgb(219, 189, 19);
+    }
+</style>
